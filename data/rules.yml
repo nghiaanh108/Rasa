@@ -1,0 +1,153 @@
+version: "2.0"
+
+rules:
+
+
+# intent cảm ơn
+- rule: Chào hỏi
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: tạm biệt
+  steps:
+  - intent: good_bye
+  - action: utter_good_bye
+
+- rule: cảm ơn
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+
+- rule: Fallback rule
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+
+# intent câu hỏi thời gian làm việc
+- rule: cau_hoi_thoi_gian
+  steps:
+  - intent: working_time_question
+  - action: action_utter_working_time_question
+
+# intent câu hỏi dự án
+- rule: Câu hỏi cài phần mềm cho dự án
+  steps:
+  - intent: project_question
+    entities: 
+    - ask_properties_methods
+  - action: utter_project_question
+
+# intent câu hỏi hợp đồng
+- rule: Câu hỏi hợp đồng trả lời bằng action
+  steps:
+  - intent: contract_question
+  - action: action_utter_contract_question
+
+
+#intent câu hỏi cơ cấu tổ chức
+- rule: Câu hỏi cơ cấu tổ chức chức vụ giám đốc Fsoft QNhon
+  steps:
+  - intent: organizational_structure_question
+  - action: action_organizational_structure_question
+
+# intent câu hỏi chung
+- rule: Câu hỏi môi trường
+  steps:
+  - intent: general_question
+    entities: 
+    - ask_yes_no
+    - environment
+  - action: utter_general_question_environment
+
+- rule: Câu hỏi môi trường như thế nào
+  steps:
+  - or:
+    - intent: general_question
+      entities: 
+      - ask_properties_methods
+      - environment
+    - intent: general_question
+      entities: 
+      - environment
+  - action: utter_general_question_environment_how
+
+- rule: Câu hỏi tăng lương
+  steps:
+  - intent: general_question
+    entities: 
+    - ask_properties_methods
+    - salary
+    - increase
+  - action: utter_general_question_salary_increase
+
+- rule: Câu hỏi công việc áp lực hay khó không
+  steps:
+  - or: 
+      - intent: general_question
+        entities: 
+        - ask_yes_no
+        - work
+        - difficult
+      - intent: general_question
+        entities: 
+        - work
+        - difficult
+  - action: utter_general_question_hard_pressure
+
+- rule: Câu hỏi công việc làm không được có sao không
+  steps:
+  - or:
+    - intent: general_question
+      entities: 
+      - do_bad
+      - ask_yes_no
+      - ask_properties_methods
+    - intent: general_question
+      entities: 
+      - do_bad
+      - ask_properties_methods
+  - action: utter_general_question_hard_work
+
+
+# intent câu hỏi TMS
+- rule: Câu hỏi TMS số ngày nghỉ trong năm
+  steps:
+  - intent: TMS_question
+    entities: 
+    - on_leave
+    - ask_for_quantity
+  - action: utter_TMS_question_number_of_days_of_leave
+
+- rule: Câu hỏi TMS cách xin ng
+  steps:
+  - intent: TMS_question
+    entities: 
+    - on_leave
+    - ask_properties_methods
+  - action: utter_TMS_question_how_apply_days_of_leave
+
+- rule: Câu hỏi TMS làm thêm giờ
+  steps:
+  - intent: TMS_question
+    entities: 
+    - OT
+    - ask_properties_methods
+  - action: utter_TMS_question_how_apply_OT
+
+- rule: Câu hỏi TMS số ngày nghỉ bù trong năm
+  steps:
+  - intent: TMS_question
+    entities: 
+    - compensatory_leave
+    - ask_properties_methods
+  - action: utter_TMS_question_how_compensatory_leave
+
+# intent câu hỏi chính sách
+- rule: Câu hỏi hợp đồng trả lời bằng action
+  steps:
+  - intent: policy_question
+  - action: action_utter_policy_question
+

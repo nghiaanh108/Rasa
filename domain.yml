@@ -1,0 +1,115 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- policy_question:
+    use_entities: true
+- organizational_structure_question:
+    use_entities: true
+- TMS_question:
+    use_entities: true
+- project_question:
+    use_entities: true
+- general_question:
+    use_entities: true
+- working_time_question:
+    use_entities: true
+- contract_question:
+    use_entities: true
+- greet
+- good_bye
+- thanks
+entities:
+- date
+- OT
+- ask_for_quantity
+- ask_for_time
+- ask_people
+- ask_properties_methods
+- ask_yes_no
+- calculate
+- compensatory_leave
+- difficult
+- decrease
+- environment
+- do_bad
+- family
+- go_on_bussiness
+- important
+- increase
+- location
+- lunch_support
+- on_leave
+- payment
+- personal_income_tax
+- position
+- review
+- rules
+- salary
+- staff
+- subsidize
+- treatment
+- union_money
+- union_regime
+- work
+- work_roaming
+- contract
+- organization
+- insurance
+- name
+responses:
+  utter_general_question_environment:
+  - text: Rất thân thiện nhất là cộng động AICamp, mọi người yêu quý nhau như gia đình và rất dễ hòa đồng, cùng nhau làm việc thăng tiến.
+  utter_general_question_salary_increase:
+  - text: Trao đổi nhiều và học hỏi nhiều thể hiện bản thân với những kiến thức học được đề xuất các ý tưởng để xây dựng công ty mạnh hơn.
+  utter_general_question_hard_pressure:
+  - text: Tất nhiên công việc sẽ khó đối với người mới làm, nhưng không phải khó là nản lòng mà hãy cố gắng vượt qua và thể hiện bản thân với chính năng lực của mình.
+  utter_general_question_hard_work:
+  - text: Đừng lo lắng và hãy cố gắng hết sức cống hiến hết mình thể hiện bản thân.
+  utter_general_question_environment_how:
+  - text: Môi trường làm việc rất thân thiện và hòa đồng.
+  utter_project_question:
+  - text: Kiểm tra phần mềm có trong WhiteList của công ty không. Nếu không, báo cáo cho PM của dự án.
+  utter_TMS_question_number_of_days_of_leave:
+  - text: Một năm nhân viên được phép nghỉ phép 12 ngày.
+  utter_TMS_question_how_apply_days_of_leave:
+  - text: Chưa có câu trả lời cho cách thức xin nghỉ phép.
+  utter_TMS_question_how_apply_OT:
+  - text: Báo cáo với PM để xin được hướng dẫn và nhận tiền làm thêm giờ.
+  utter_TMS_question_how_compensatory_leave:
+  - text: Xem trên tms2.fsoft.com.vn.
+  utter_fallback:
+  - text: Tôi xin lỗi, tôi chưa hiểu ý muốn của anh(chị) ạ. Anh chị có thể nói lại được không ạ
+  utter_default:
+  - text: Tôi xin lỗi, tôi chưa hiểu ý muốn của anh(chị) ạ. Anh chị có thể nói lại được không ạ
+  utter_greet:
+  - text: |-
+      Chào anh(chị) ạ ^^
+  - text: |-
+      Chào anh(chị) nhá ^^
+  utter_good_bye:
+  - text: Hẹn gặp lại anh chị ạ ^^
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_thanks:
+  - text: Cảm ơn anh chị quá khen ah!
+  - text: Dạ không có gì, đó là trách nhiệm của bot mà!
+actions:
+- utter_TMS_question_how_apply_OT
+- utter_TMS_question_how_apply_days_of_leave
+- utter_TMS_question_how_compensatory_leave
+- utter_TMS_question_number_of_days_of_leave
+- utter_fallback
+- utter_general_question_environment
+- utter_general_question_environment_how
+- utter_general_question_hard_pressure
+- utter_general_question_hard_work
+- utter_general_question_salary_increase
+- utter_good_bye
+- utter_greet
+- utter_project_question
+- utter_thanks
+- action_utter_working_time_question
+- action_utter_contract_question
+- action_organizational_structure_question
+- action_utter_policy_question

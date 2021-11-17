@@ -1,0 +1,102 @@
+1. Ngày nhận lương mỗi tháng là ngày nào?
+- Ngày 19 hàng tháng.
+!2. Ai là giám đốc Fsoft Quy Nhơn?
+- Vũ Văn Đông.
+!3. Ai là giám đốc Trung tâm Nghiên cứu và Ứng dụng Trí tuệ nhân tạo Quy Nhơn?
+- Vũ Hồng Chiên.
+4. Số ngày nghỉ phép trong một năm là bao nhiêu?
+- 12 ngày.
+5. Thời gian làm việc mỗi ngày tại Fsoft Quy Nhơn bắt đầu và kết thúc lúc nào?
+- Bắt đầu lúc 8 giờ và kết thúc lúc 17 giờ, nghỉ trưa từ 12 giờ đến 13 giờ.
+6. Muốn nghỉ phép phải làm gì?
+- 
+7. Muốn xin làm thêm giờ (OT) phải làm gì?
+- Báo cáo với PM
+
+8. Muốn cài đặt phần mềm cần dùng cho dự án thì phải làm gì?
+- Kiểm tra phần mềm có trong WhiteList của công ty không. Nếu không, báo cáo cho PM của dự án.
+
+!9. Hợp đồng thử việc kéo dài tối đa là bao lâu?
+- 2 tháng.
+
+!10. Hợp đồng đào tạo Fresher kéo dài bao lâu?
+- Từ 3 đến 3.5 tháng.
+
+!11. Hợp đồng đào tạo thực nghiệm (on-job-training) kéo dài bao lâu?
+- Tối đa 6 tháng.
+
+12. Xem số ngày nghỉ bù ở đâu?
+- Xem trên tms2.fsoft.com.vn.
+
+!13. Số tiền đóng các loại bảo hiểm mỗi tháng là bao nhiêu?
+- Bảo hiểm xã hội: công ty đóng 17.5%, nhân viên đóng 8%. Bảo hiểm y tế: công ty đóng 3%, nhân viên đóng 1.5%. Bảo hiểm thất nghiệp: công ty đóng 1%, nhân viên đóng 1%.
+
+14. QAI gồm các bộ phận nào?
+- AIA, AIO, COE, AICamp.
+
+!15. Chương trình AICamp được đào tạo bao lâu?
+- 6 tháng.
+16. Một năm được review lương mấy lần và vào đợt nào?
+- Một lần.
+
+17. Tiền lương tháng 13 được tính như thế nào?
+- Tiền lương tháng 13 được tính bằng lương của tháng 12.
+
+18. Các trường hợp nào bị trừ lương?
+- Nghỉ việc không phép, lộ thông tin,...
+19. Không biết môi trường làm việc có thân thiện không?
+-
+20. Các quy định ở công ty, những quy định nào cần phải chú ý?
+-
+21. Chế độ công đoàn như thế nào? 
+- 
+
+22. Chế độ công đoàn gồm những quyền lợi gì?
+- 
+
+23. Tiền công đoàn được sử dụng ra sao?
+-
+
+24. Mỗi năm được tăng lương bao nhiêu lần?
+- Định kỳ hằng năm 1 lần.
+
+25. Làm gì để được tăng lương?
+-
+26. Fsoft Quy Nhơn có bao nhiêu bộ phận?
+- Các bộ phận của Fsoft Quy Nhơn: PID, FID, SEPG.PRO, IT, UTOP, QAI, DPS, GAM, FST, SSC, AF, FWA, ....
+
+!27. QAI gồm bao nhiêu team?
+- AIA, AIO, COE, AICamp,...
+!28. Quản lý của QAI gồm những ai?
+- AIO: TrongNV5, BUL, AIO: CuongVT1, COE: VinhVDQ, AIC: PhongNX, (team lead tại QNh là khangVNT1,) AICamp là anh Tấn.
+
+29. Công ty có hỗ trợ ăn trưa không?
+- Không.
+
+30. Không biết công việc có áp lực, có khó không?
+-
+31. Chế độ cho nhân viên chuyển vùng công tác vào Quy Nhơn là như thế nào?
+- Hỗ trợ nhà công vụ,...
+32. Bảo hiểm FPT Care được tính như thế nào?
+-
+33. Cách tính lương hàng tháng như thế nào?
+- 
+
+34. Thuế thu nhập cá nhân áp dụng như thế nào?
+- Cách tính thuế thu nhập đối với thu nhập từ tiền lương, tiền công (hợp đồng lao động lớn hơn 3 tháng) được tính theo công thức sau:
+(1) Thuế thu nhập cá nhân phải nộp = Thu nhập tính thuế x Thuế suất
+Trong đó:
+(2) Thu nhập tính thuế = Thu nhập chịu thuế - Các khoản giảm trừ
+Thu nhập chịu thuế được tính như sau:
+(3) Thu nhập chịu thuế = Tổng thu nhập - Các khoản được miễn
+
+35. Lương bao nhiêu thì bị tính thuế thu nhập cá nhân?
+- Người lao động làm việc có tổng thu nhập từ tiền lương, tiền công trên 11 triệu đồng/tháng (nếu không có người phụ thuộc) mới phải nộp thuế thu nhập cá nhân. Nếu có người phụ thuộc thì cộng thêm 4,4 triệu đồng/người.
+
+36. Các khoảng trợ cấp khi đi công tác được chi trả như thế nào?
+-
+37. Các trường hợp nào được thưởng?
+-
+38. Công ty có phúc lợi gì cho các thành viên gia đình của nhân viên?
+-
+39. 

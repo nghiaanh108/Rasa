@@ -1,0 +1,244 @@
+version: "2.0"
+nlu:
+- intent: contract_question
+  examples: |
+    - Ngày nhận [lương](salary) mỗi tháng là [ngày nào](ask_for_time)?
+    - [Ngày nào](ask_for_time) là ngày công ty trả [lương](salary) [nhân viên](staff)?
+    - [Lương](salary) nhận hằng tháng là [ngày nào](ask_for_time)?
+    - [Lương](salary) [nhân viên](staff) nhận vào [thời gian nào](ask_for_time)?
+    - Hàng tháng [nhân viên](staff) nhận [lương](salary) vào [ngày nào](ask_for_time)?
+    - [lương](salary) hàng tháng của [nhân viên](staff) được nhận vào [ngày nào](ask_for_time)?
+    - Công ty trả [lương](salary) cho [nhân viên](staff) vào [ngày mấy](ask_for_time)?
+    - Hàng tháng [ngày nào](ask_for_time) là ngày nhận [lương](salary)?
+    - [Ngày nào](ask_for_time) nhận [lương](salary)?
+    - [Ngày mấy](ask_for_time) nhận [lương](salary)?
+    - [Ngày mấy](ask_for_time) nhận [lương](salary) cho [nhân viên](staff)?
+    - [Lương](salary) nhận [ngày nào](ask_for_time)?
+    - Công ty trả [lương](salary) vào [ngày nào](ask_for_time)?
+    - Một năm được [review](review) [lương](salary) [mấy lần](ask_for_quantity) và vào [đợt nào](ask_for_time)?
+    - Một năm được [review](review) [lương](salary) [mấy lần](ask_for_quantity)?
+    - [Tiền lương](salary) [tháng 13](date) được [tính](calculate) [như thế nào](ask_properties_methods)?
+    - [Tiền lương](salary) [tháng 13](date) [tính](calculate) ra [làm sao](ask_properties_methods)?
+    - [tiền lương](salary) [tháng 13](date) được [tính](calculate) [như thế nào](ask_properties_methods)?
+    - [Lương](salary) [tháng mười ba](date) [tính](calculate) [như thế nào](ask_properties_methods)?
+    - [tiền lương](salary) [tháng 13](date) được [tính](calculate) [ra sao](ask_properties_methods)?
+    - [tiền lương](salary) [tháng 13](date)
+    - [tháng 13](date) [tính](calculate) [lương](salary) [ra sao](ask_properties_methods)?
+    - Mỗi năm được [tăng](increase) [lương](salary) [bao nhiêu lần](ask_for_quantity)?
+    - Một năm được [tăng](increase) [lương](salary) [mấy lần](ask_for_quantity)?
+    - [Cách](ask_properties_methods) [tính](calculate) [lương](salary) hàng tháng [như thế nào](ask_properties_methods)?
+    - [Cách](ask_properties_methods) [tính](calculate) [lương](salary) [như thế nào](ask_properties_methods)?
+    - Các chế độ [đãi ngộ](treatment) giành cho [nhân viên](staff) [là gì](ask_properties_methods)?
+    - Chính sách [lương bổng, khen thưởng](treatment) và các [đãi ngộ](treatment) khác [như thế nào](ask_properties_methods)?
+    - Các [trường hợp](ask_properties_methods) nào được [thưởng](treatment)?
+    - [Cách](ask_properties_methods) để được [thưởng](treatment) thêm lương?
+    - [Ngày 19](date) nhận [lương](salary) phải [không](ask_yes_no)
+    - [Ngày 23](date) nhận [lương](salary) phải [không](ask_yes_no)
+    - Hợp đồng [thử việc](contract) kéo dài tối đa là [bao lâu](ask_for_time)?
+    - Thời hạn kéo dài của hợp đồng [thử việc](contract)  là [bao lâu](ask_for_time)?
+    - Thời gian [thử việc](contract)  kéo dài [bao lâu](ask_for_time)?
+    - [Thử việc](contract)  trong [bao lâu](ask_for_time)?
+    - Hợp đồng đào tạo [Fresher](contract) kéo dài [bao lâu](ask_for_time)?
+    - Thời gian đào tạo [Fresher](contract) là [bao lâu](ask_for_time)?
+    - Thời gian đào tạo [Fresher](contract) là [mấy tháng](ask_for_time)?
+    - Hợp đồng đào tạo [thực nghiệm](contract) (on-job-training) kéo dài [bao lâu](ask_for_time)?
+    - Chương trình [AICamp](contract) được đào tạo [bao lâu](ask_for_time)?
+    - [AiCamp](contract) đào tạo [mấy tháng](ask_for_time)?
+    - chương trình [aicamp](contract) thời gian [bao lâu](ask_for_time)?
+- intent: organizational_structure_question
+  examples: |
+    - [Ai](ask_people) là [giám đốc](position) [Fsoft Quy Nhơn](organization)?
+    - [Giám đốc](position) [Fsoft Quy Nhơn](organization) là [ai](ask_people)?
+    - [ai](ask_people) là người [chủ](position) của [Fsoft Quy Nhơn](organization) ?
+    - [Giám đốc](position) [Fsoft QN](organization) là [ai](ask_people)?
+    - [Fsoft Quy Nhơn](organization) có [giám đốc](position) là [ai](ask_people)?
+    - [Ai](ask_people) là người [đứng đầu](position) [Fsoft Quy Nhơn](organization)?
+    - [Lãnh đạo](position) [Fsoft Quy Nhơn](organization) là [ai](ask_people)?
+    - [Ai](ask_people) là [sếp](position) [Fsoft Quy Nhơn](organization)?
+    - [chủ](position) [Fsoft Quy Nhơn](organization) là [ai](ask_people)?
+    - [ai](ask_people) là [giám đốc](position) [Fsoft Quy Nhơn](organization)
+    - [Ai](ask_people) là [giám đốc](position) [Trung tâm Nghiên cứu và Ứng dụng Trí tuệ nhân tạo Quy Nhơn](organization)
+    - [Ai](ask_people) là [giám đốc](position) [Trung tâm Nghiên cứu và Ứng dụng Trí tuệ nhân tạo Quy Nhơn](organization)?
+    - [Giám đốc](position) của [Trung tâm Nghiên cứu và Ứng dụng Trí tuệ nhân tạo Quy Nhơn](organization) là [ai](ask_people)?
+    - [Trung tâm Nghiên cứu và Ứng dụng Trí tuệ nhân tạo Quy Nhơn](organization) có [giám đốc](position) là [ai](ask_people)?
+    - [Giám đốc](position) của [TTNC và UDTTNTQN](organization) là [ai](ask_people)?
+    - [TTNC và UDTTNTQN](organization) [ai](ask_people) là [giám đốc](position) ?
+    - [Giám đốc](position) của [TTNCVUDTTNTQN](organization) là [ai](ask_people)?
+    - [TTNCVUDTTNTQN](organization) [ai](ask_people) là [giám đốc](position)
+    - [QAI](organization) gồm các [bộ phận nào](ask_properties_methods)?
+    - [QAI](organization) gồm những [bộ phận nào](ask_properties_methods)?
+    - [Các bộ phận](ask_properties_methods) của [QAI](organization)?
+    - [Fsoft Quy Nhơn](organization) có [bao nhiêu](ask_for_quantity) bộ phận?
+    - [Fsoft Quy Nhơn](organization) có [mấy](ask_for_quantity) bộ phận?
+    - [QAI](organization) gồm [bao nhiêu](ask_for_quantity) team?
+    - [QAI](organization) gồm [mấy](ask_for_quantity) team?
+    - Quản lý của [QAI](organization) gồm những [ai](ask_people)?
+    - [ai](ask_people) là quản lý của [QAI](organization)?
+    - [Vũ Văn Đông](name) là [ai](ask_people)
+    - [Vũ Hồng Chiên](name) là [ai](ask_people)
+    - [Mai Thành Tấn](name) là [ai](ask_people)
+    - [Nguyễn Trung Trí](name) là [ai](ask_people)
+- intent: TMS_question
+  examples: |
+    - Số ngày [nghỉ phép](on_leave) trong một năm là [bao nhiêu](ask_for_quantity)?
+    - Số ngày [nghỉ](on_leave) trong một năm là [bao nhiêu](ask_for_quantity)?
+    - Số ngày [nghỉ phép](on_leave)?
+    - Số ngày nghỉ [nghỉ](on_leave)
+    - Một năm [nghỉ phép](on_leave) [bao nhiêu](ask_for_quantity) ngày?
+    - Hằng năm [nhân viên](staff) được [nghỉ phép](on_leave) [bao nhiêu](ask_for_quantity) ngày?
+    - [nhân viên](staff) được [nghỉ phép](on_leave) [bao nhiêu](ask_for_quantity) ngày trong một năm?
+    - Có [bao nhiêu](ask_for_quantity) ngày [nghỉ phép](on_leave) và nghỉ bệnh?
+    - Một năm được [nghỉ phép](on_leave) [mấy ngày](ask_for_quantity)?
+    - Muốn [nghỉ phép](on_leave) phải [làm gì](ask_properties_methods)?
+    - Muốn [nghỉ phép](on_leave) thì làm [như thế nào](ask_properties_methods)?
+    - [nhân viên](staff) muốn [nghỉ phép](on_leave) thì [cần phải làm gì](ask_properties_methods)?
+    - [Làm cách nào](ask_properties_methods) để được [nghỉ phép](on_leave)?
+    - [Các bước thực hiện](ask_properties_methods) để được xin [nghỉ phép](on_leave)?
+    - [Làm gì](ask_properties_methods) để được [nghỉ phép](on_leave)?
+    - Muốn xin [làm thêm giờ](OT) phải [làm gì](ask_properties_methods)?
+    - [Làm gì](ask_properties_methods) để xin [làm thêm giờ](OT)?
+    - Muốn [làm thêm giờ](OT) thì phải làm [như thế nào](ask_properties_methods)?
+    - muốn [OT](OT) thì phải [làm gì](ask_properties_methods)?
+    - xin [OT](OT) thì phải [làm gì](ask_properties_methods)?
+    - Xem số [ngày nghỉ bù](compensatory_leave) [ở đâu](ask_properties_methods)?
+    - Xem số [ngày nghỉ bù](compensatory_leave) [bằng cách nào](ask_properties_methods)?
+    - [Bằng cách nào](ask_properties_methods) để xem số [ngày nghỉ bù](compensatory_leave)?
+- intent: working_time_question
+  examples: |
+    - Thời gian làm việc mỗi ngày tại [Fsoft Quy Nhơn](organization) bắt đầu và kết thúc [lúc nào](ask_for_time)?
+    - [Fsoft Quy Nhơn](organization) làm việc bắt đầu và kết thúc [mấy giờ](ask_for_time)?
+    - [Fsoft QN](organization) làm việc vào [giờ nào](ask_for_time)?
+    - Thời gian làm việc tại [Fsoft Quy Nhơn](organization) là [mấy giờ](ask_for_time)?
+    - thời gian làm việc tại [Fsoft Quy Nhơn](organization)
+- intent: project_question
+  examples: |
+    - Muốn cài đặt phần mềm cần dùng cho dự án thì phải [làm gì](ask_properties_methods)?
+    - Cài đặt phần mềm cho dự án cần phải làm [như thế nào](ask_properties_methods)?
+
+- intent: policy_question
+  examples: |
+    - Số [tiền đóng](payment) các loại [bảo hiểm](insurance) mỗi tháng là [bao nhiêu](ask_for_quantity)?
+    - Số [tiền đóng](payment) các loại [bảo hiểm y tế](insurance) mỗi tháng là [bao nhiêu](ask_for_quantity)?
+    - [Đóng tiền](payment) [bảo hiểm](insurance) là [bao nhiêu](ask_for_quantity)?
+    - [Các trường hợp nào](ask_properties_methods) bị [trừ](decrease) [lương](salary)?
+    - Bị [trừ](decrease) [lương](salary) [khi nào](ask_properties_methods)?
+    - [Khi nào](ask_properties_methods) bị [trừ](decrease) [lương](salary)?
+    - Các quy định ở công ty, [những quy định](rules) [nào](ask_properties_methods) cần phải [chú ý](important)?
+    - Công ty có [những quy định](rules) [nào](ask_properties_methods) cần [chú ý](important)?
+    - [Chế độ công đoàn](union_regime) [như thế nào](ask_properties_methods)?
+    - [Các quyền lợi](ask_properties_methods) trong [chế độ công đoàn](union_regime)?
+    - [Chế độ công đoàn](union_regime) gồm [những quyền lợi](ask_properties_methods) gì?
+    - [Tiền công đoàn](union_money) được sử dụng [ra sao](ask_properties_methods)
+    - Sử dụng [tiền công đoàn](union_money) [như thế nào](ask_properties_methods)
+    - Công ty có [hỗ trợ ăn trưa](lunch_support) [không](ask_yes_no)?
+    - Có được [hổ trợ cơm trưa](lunch_support) [không](ask_yes_no)?
+    - Chế độ cho [nhân viên](staff) [chuyển vùng công tác](work_roaming) vào [Quy Nhơn](location) là [như thế nào](ask_properties_methods)?
+    - [Khi nào](ask_properties_methods) được [chuyển vùng công tác](work_roaming) vào [Quy Nhơn](location)?
+    - Chính sách [hỗ trợ mua nhà](home_buying_support) cho [nhân viên](staff) là [như thế nào](ask_properties_methods)?
+    - Chính sách [hỗ trợ mua nhà](home_buying_support) là [như nào](ask_properties_methods)?
+    - [Bảo hiểm FPT Care](insurance) được [tính](calculate) [như thế nào](ask_properties_methods)?
+    - [Cách](ask_properties_methods) [tính](calculate) [bảo hiểm FPT Care](insurance) ra [làm sao](ask_properties_methods)?
+    - [Cách](ask_properties_methods) [tính](calculate) [bảo hiểm FPT Care](insurance) [như thế nào](ask_properties_methods)?
+    - Các khoảng [trợ cấp](subsidize) khi đi [công tác](go_on_bussiness) được chi trả [như thế nào](ask_properties_methods)?
+    - Khi đi [công tác](go_on_bussiness) thì [trợ cấp](subsidize) được chi trả [như thế nào](ask_properties_methods)?
+    - [Trợ cấp](subsidize) chi trả việc đi [công tác](go_on_bussiness) [như thế nào](ask_properties_methods)?
+    - Công ty có [phúc lợi](subsidize) gì cho các thành viên [gia đình](family) của [nhân viên](staff)?
+    - [Gia đình](family) của [nhân viên](staff) có được [phúc lợi](subsidize) gì không?
+    - [Thuế thu nhập cá nhân](personal_income_tax) áp dụng [như thế nào](ask_properties_methods)?
+    - [Lương](salary) [bao nhiêu](ask_for_quantity) thì bị [tính](calculate) [thuế thu nhập cá nhân](personal_income_tax)?
+    - [Lương](salary) [bao nhiêu](ask_for_quantity) thì bị [tính](calculate) [thuế](personal_income_tax)?
+    - [tiền đóng](payment) [bảo hiểm y tế](insurance) là [bao nhiêu](ask_for_quantity)
+- intent: general_question
+  examples: |
+    - Không biết [môi trường làm việc](environment) có thân thiện [không](ask_yes_no)?
+    - [Môi trường làm việc](environment) có hòa đồng như tôi nghỉ  [không](ask_yes_no)?
+    - Tôi có thể [hòa đồng với các đồng nghiệp](environment) tương lai [không](ask_yes_no)?
+    - [Làm gì](ask_properties_methods) để được [tăng](increase) [lương](salary)?
+    - [Làm sao](ask_properties_methods) để được [tăng](increase) [lương](salary)?
+    - [cách](ask_properties_methods) để [tăng](increase) [lương](salar)?
+    - [cách](ask_properties_methods) [tăng](increase) [lương](salar)?
+    - [cách](ask_properties_methods) để được [tăng](increase) [lương](salar)?
+    - [tăng](increase) [lương](salar) [như thế nào](ask_properties_methods)
+    - muốn [tăng](increase) [lương](salar) thì [như thế nào](ask_properties_methods)?
+    - Muốn được [tăng](increase) [lương](salary) thì phải [làm gì](ask_properties_methods)?
+    - Muốn được [tăng](increase) [lương](salary) thì phải [làm sao](ask_properties_methods)?
+    - Không biết [công việc](work) có [áp lực](difficult) [không](ask_yes_no)?
+    - [Công việc](work) có [khó](difficult) [không](ask_yes_no)?
+    - [Việc làm](work) có [áp lực](difficult) [không](ask_yes_no)?
+    - Lỡ mình [làm không được](do_bad) thì sao [không](ask_yes_no)?
+    - [Làm không được](do_bad) có bị sao [không](ask_yes_no)?
+    - [làm tệ](do_bad) có bị gì [không](ask_yes_no)?
+    - [làm tệ](do_bad) thì sao [không](ask_yes_no)?
+    - [Môi trường làm việc](environment) [như thế nào](ask_properties_methods)?
+    - [Môi trường làm việc](environment) [ra sao](ask_properties_methods)?
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - xin chào
+    - chào em
+    - mình có vài câu hỏi
+    - có ai giúp mình không
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - cháu ơi
+    - chào
+    - có ai ở đây không?
+    - bot ơi
+    - cho mình hỏi chút
+    - hello em
+    - hi em
+    - bắt đầu
+- intent: good_bye
+  examples: |
+    - bye
+    - tạm biệt em
+    - tạm biệt
+    - tạm biệt em nhé
+    - chào tạm biệt
+    - good bye
+    - bye bye
+- intent: thanks
+  examples: |
+    - cám ơn
+    - thanks
+    - thank you
+    - cảm ơn em
+    - cảm ơn em nhiều nhé
+    - cảm ơn
+    - cảm ơn em nhá
+    - thanks em nha
+    - cảm ơn nha
+    - good job
+    - cảm ơn bot nha
+    - thanks bot
+    - thank you so much
+    - great! Thanks
+- lookup: location
+  examples: |
+    - Quy Nhơn
+    - Đà Nẵng
+    - TP.HCM
+    - Hà Nội
+    - Bình Định
+    - Quảng Nam
+    - Quảng Ngãi
+- lookup: position
+  examples: |
+    - Giám đốc
+    - PM
+    - Quản lý dự án
+    - Quản lý
+- lookup: name
+  examples: |
+    - Vũ Văn Đông
+    - Nguyễn Văn Vinh
+    - Vũ Hồng Chiên
+    - Nguyễn Trung Trí
+    - Mai Thành Tấn
+    - mai thành tấn
+    - vũ văn đông
+    - vũ hồng chiên
+    - nguyễn văn vinh
+

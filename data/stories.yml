@@ -1,0 +1,141 @@
+version: "2.0"
+
+stories:
+# intent câu hỏi thời gian làm việc
+- story: cau_hoi_thoi_gian
+  steps:
+  - intent: working_time_question 
+  - action: action_utter_working_time_question
+
+# intent câu hỏi chung
+- story: Câu hỏi môi trường
+  steps:
+  - intent: general_question
+    entities: 
+    - ask_yes_no
+    - environment
+  - action: utter_general_question_environment
+
+- story: Câu hỏi môi trường như thế nào
+  steps:
+  - or:
+    - intent: general_question
+      entities: 
+      - ask_properties_methods
+      - environment
+    - intent: general_question
+      entities: 
+      - environment
+  - action: utter_general_question_environment_how
+
+- story: Câu hỏi tăng lương
+  steps:
+  - intent: general_question
+    entities: 
+    - ask_properties_methods
+    - salary
+    - increase
+  - action: utter_general_question_salary_increase
+
+- story: Câu hỏi công việc áp lực hay khó không
+  steps:
+  - or: 
+      - intent: general_question
+        entities: 
+        - ask_yes_no
+        - work
+        - difficult
+      - intent: general_question
+        entities: 
+        - work
+        - difficult
+  - action: utter_general_question_hard_pressure
+
+- story: Câu hỏi công việc làm không được có sao không
+  steps:
+  - or:
+    - intent: general_question
+      entities: 
+      - do_bad
+      - ask_yes_no
+      - ask_properties_methods
+    - intent: general_question
+      entities: 
+      - do_bad
+      - ask_properties_methods
+  - action: utter_general_question_hard_work
+
+# intent câu hỏi dự án
+- story: Câu hỏi cài phần mềm cho dự án
+  steps:
+  - intent: project_question
+    entities: 
+    - ask_properties_methods
+  - action: utter_project_question
+
+# intent câu hỏi hợp đồng
+- story: Câu hỏi hợp đồng trả lời bằng action
+  steps:
+  - intent: contract_question
+  - action: action_utter_contract_question
+
+
+# intent câu hỏi TMS
+- story: Câu hỏi TMS số ngày nghỉ trong năm
+  steps:
+  - or:
+    - intent: TMS_question
+      entities: 
+      - on_leave
+      - ask_for_quantity
+    - intent: TMS_question
+      entities: 
+      - on_leave
+  - action: utter_TMS_question_number_of_days_of_leave
+
+- story: Câu hỏi TMS cách xin ng
+  steps:
+  - intent: TMS_question
+    entities: 
+    - on_leave
+    - ask_properties_methods
+  - action: utter_TMS_question_how_apply_days_of_leave
+
+- story: Câu hỏi TMS làm thêm giờ
+  steps:
+  - intent: TMS_question
+    entities: 
+    - OT
+    - ask_properties_methods
+  - action: utter_TMS_question_how_apply_OT
+
+- story: Câu hỏi TMS số ngày nghỉ bù trong năm
+  steps:
+  - intent: TMS_question
+    entities: 
+    - compensatory_leave
+    - ask_properties_methods
+  - action: utter_TMS_question_how_compensatory_leave
+
+# intent câu hỏi chính sách
+- story: Câu hỏi hợp đồng trả lời bằng action
+  steps:
+  - intent: policy_question
+  - action: action_utter_policy_question
+
+# intent cảm ơn
+- story: Chào hỏi
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: tạm biệt
+  steps:
+  - intent: good_bye
+  - action: utter_good_bye
+
+- story: cảm ơn
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+

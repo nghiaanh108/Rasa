@@ -1,0 +1,41 @@
+language: vi
+pipeline:
+- name: VietnameseTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: rasa_nlu_examples.featurizers.dense.BytePairFeaturizer
+  lang: vi
+  vs: 200000
+  dim: 300
+  cache_dir: downloaded/bpe
+  model_file: downloaded/bpe/vi.wiki.bpe.vs200000.model
+  emb_file: downloaded/bpe/vi.wiki.bpe.vs200000.d300.w2v.bin
+- name: rasa_nlu_examples.featurizers.dense.FastTextFeaturizer
+  cache_dir: downloaded/fasttext
+  file: cc.vi.300.bin
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: True
+- name: EntitySynonymMapper
+- name: RegexEntityExtractor
+  use_lookup_tables: True
+- name: ResponseSelector
+  epochs: 100
+  constrain_similarities: True
+- name: FallbackClassifier
+  threshold: 0.7
+
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  max_history: 5
+  epochs: 100
+- name: RulePolicy
+  core_fallback_threshold: 0.4
+  enable_fallback_prediction: True
+  core_fallback_action_name: "action_default_fallback"
