@@ -1,0 +1,7 @@
+ujson==1.35
+fastapi==0.70.0
+requests==2.25.1
+rasa==2.8.1                  
+rasa-nlu-examples==0.2.5 
+rasa-sdk==2.8.1
+rasa-x==0.39.3  
